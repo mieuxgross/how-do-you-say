@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/sourceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/source_label" />
+
+    <TextView
+        android:id="@+id/fromLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sourceLabel"
+        android:layout_alignBottom="@+id/sourceLabel"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/displaySource"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sourceLabel"
+        android:layout_below="@+id/sourceLabel"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/transLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displaySource"
+        android:layout_below="@+id/displaySource"
+        android:layout_marginTop="10dp"
+        android:text="@string/translated_label" />
+    
+    <TextView
+        android:id="@+id/toLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/transLabel"
+        android:layout_alignBottom="@+id/transLabel"
+        android:layout_alignLeft="@+id/fromLang" />
+
+    <TextView
+        android:id="@+id/displayTrans"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/transLabel"
+        android:layout_below="@+id/transLabel"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/validCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayTrans"
+        android:layout_below="@+id/displayTrans"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:text="@string/is_valid_label" />
+
+</RelativeLayout>
